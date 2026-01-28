@@ -1,0 +1,44 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "620px",
+			"wideSize": "1000px"
+		},
+		"spacing": {
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"css": "/* Styles pour les métadonnées de recettes */\n.meta-recette {\n    background-color: #f9f9f9;\n    padding: 20px;\n    border-radius: 8px;\n    margin: 20px 0;\n}\n\n.meta-recette p {\n    margin: 10px 0;\n}\n\n.ingredients {\n    margin-top: 20px;\n    padding: 15px;\n    background-color: #fff;\n    border-left: 4px solid var(--wp--preset--color--primary);\n}\n\n/* Styles pour la grille de recettes */\n.wp-block-post-template {\n    display: grid;\n    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n    gap: 30px;\n}\n\n/* Styles généraux du thème */\nbody {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n    font-size: 16px;\n    color: #333333;\n    margin: 0 20px; /* marge gauche/droite de 20px */\n    padding: 0;\n    background: linear-gradient(to bottom, #f0f0f0, #ffffff); /* dégradé gris vers blanc */\n}\n\n/* Header */\n.site-header {\n    margin: 0 20px; /* marge gauche/droite */\n    padding: 20px 0;\n}\n\n/* Conteneur principal */\n.site {\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 20px;\n}\n\n/* Footer */\n.site-footer {\n    margin: 0 20px; /* marge gauche/droite */\n    text-align: center;\n    padding: 40px 0;\n    background-color: #f2f2f2;\n    color: #666666;\n}\n\n/* Liens */\na {\n    color: #4ECDC4; /* couleur secondaire */\n    text-decoration: none;\n}\n\na:hover {\n    text-decoration: underline;\n}\n\n/* Titres */\nh1, h2, h3, h4, h5, h6 {\n    color: #222222;\n    margin-top: 1.2em;\n    margin-bottom: 0.6em;\n    line-height: 1.3;\n}\n\n/* Paragraphes */\np {\n    line-height: 1.6;\n    margin-bottom: 1em;\n}\n\n/* Images mises en avant */\n.wp-block-post-featured-image img {\n    max-width: 100%;\n    height: auto;\n    border-radius: 8px;\n    margin-bottom: 20px;\n}\n\n/* Styles pour les métadonnées des recettes */\n.champs-recette {\n    background-color: #fafafa;\n    padding: 20px;\n    border-radius: 8px;\n    margin: 20px 0;\n    border-left: 4px solid #FF6B6B; /* couleur primaire */\n}\n\n.champs-recette-row {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 10px;\n}\n\n.champs-recette-label {\n    font-weight: bold;\n    color: #555555;\n}\n\n.champs-recette-value {\n    color: #333333;\n}\n\n/* Section ingrédients */\n.ingredients {\n    background-color: #ffffff;\n    border-left: 4px solid #4ECDC4; /* couleur secondaire */\n    padding: 15px;\n    margin-top: 20px;\n    border-radius: 6px;\n}\n\n.ingredients h3 {\n    margin-top: 0;\n}\n\n/* Grille des articles / archives */\n.wp-block-post-template {\n    display: grid;\n    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n    gap: 30px;\n}\n"
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	]
+}
