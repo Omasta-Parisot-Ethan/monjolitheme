@@ -1,17 +1,33 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
-<main class="wp-block-group"><!-- wp:post-featured-image /-->
+<!-- wp:group {"tagName":"main","className":"recipe-card recipe-card__meta tag difficulty facile moyen difficile button recipe-cards-grid","layout":{"type":"constrained"}} -->
+<main class="wp-block-group recipe-card recipe-card__meta tag difficulty facile moyen difficile button recipe-cards-grid"><!-- wp:post-featured-image {"className":"recipe-card__image"} /-->
 
-<!-- wp:post-title /-->
+<!-- wp:post-title {"className":"recipe-card__title"} /-->
 
 <!-- wp:pods/pods-block-single {"name":{"label":"recette","value":"recette"},"template":{"label":"champs_recettes","value":"champs_recettes"}} /-->
 
-<!-- wp:post-content /-->
+<!-- wp:post-content {"className":"recipe-card__content"} /-->
+
+<!-- wp:feedbackwp/rating-widget -->
+<div class="wp-block-feedbackwp-rating-widget">[ratemypost]</div>
+<!-- /wp:feedbackwp/rating-widget -->
 
 <!-- wp:post-terms {"term":"type_de_plat"} /-->
 
 <!-- wp:post-terms {"term":"difficulte"} /--></main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+<!-- wp:query {"queryId":13,"query":{"perPage":10,"pages":0,"offset":0,"postType":"recette","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"parents":[],"format":[]},"metadata":{"categories":["posts"],"patternName":"core/block/172","name":"Recettes Récentes"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}}},"layout":{"inherit":false}} -->
+<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px"><!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-excerpt /-->
+
+<!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"recipe-card__footer"} /-->
